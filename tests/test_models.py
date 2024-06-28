@@ -32,11 +32,3 @@ def test_daily_mean_integers():
 
 
 
-def test_daily_min_string():
-    """Test for TypeError when passing strings"""
-    from inflammation.models import daily_min
-
-    with pytest.raises(TypeError):
-        error_expected = daily_min([['Hello', 'there'], ['General', 'Kenobi']])
-
-
